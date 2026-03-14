@@ -1,5 +1,5 @@
 # UserAssessment_Application
-Frontend Framework - Angular, Backend - C#, Database - PostgreSQL  
+Frontend Framework - Angular, Backend - C#, Database - PostgreSQL , Dockerized
 
 login-auth-assessment
  backend
