@@ -1,2 +1,48 @@
 # UserAssessment_Application
 Frontend Framework - Angular, Backend - C#, Database - PostgreSQL  
+
+login-auth-assessment
+ backend
+ AuthApi
+ Controllers
+
+AuthController.cs
+Data
+AppDbContext.cs
+Models
+User.cs
+DTOs
+ RegisterRequest.cs
+ LoginRequest.cs
+ Services
+ TokenService.cs
+ Program.cs
+ Appsettings.json
+ Dockerfile
+
+AuthApi.Tests
+AuthTests.cs
+
+frontend
+src
+app
+pages
+login
+register
+user-details
+
+services
+auth.service.ts
+
+guards
+auth.guard.ts
+
+app-routing.module.ts
+
+environments
+
+ Dockerfile
+
+docker-compose.yml
+ build.sh
+ README.md
