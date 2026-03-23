@@ -1,0 +1,38 @@
+services:
+  backend:
+    build:
+      context: ./UserAssessment_Applicationdo
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    depends_on:
+      - postgresdb
+
+  postgresdb:
+    image: postgres:17.1
+    container_name: postgresdb
+    restart: always
+    environment:
+      POSTGRES_DB: authdb
+      POSTGRES_USER: dbuser
+      POSTGRES_PASSWORD: Passwordtest1
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: pgadmin_container
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: lufuzolm@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: Passwordtest1
+    ports:
+      - "8081:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+
+volumes:
+  postgres_data:
+  pgadmin_data:

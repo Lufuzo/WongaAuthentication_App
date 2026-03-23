@@ -1,0 +1,16 @@
+# Node / Angular
+node_modules/
+dist/
+package-lock.json
+
+# Visual Studio
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.log
+
+# Environment
+.env
